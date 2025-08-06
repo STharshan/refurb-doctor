@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { FaCar, FaCarCrash, FaPaintRoller, FaScrewdriver, FaSprayCan, FaStar, FaWrench } from "react-icons/fa";
+import {
+  FaCar,
+  FaCarCrash,
+  FaPaintRoller,
+  FaScrewdriver,
+  FaSprayCan,
+  FaStar,
+  FaWrench,
+} from "react-icons/fa";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -9,66 +17,72 @@ const services = [
     subtitle: "For a Fresh Look",
     icon: <FaSprayCan />,
     images: ["/31.webp", "/32.webp", "33.webp", "34.webp"],
-    path: "/services/full-respray"
+    path: "/services/full-respray",
   },
   {
     title: "Car Part Damage Repair",
     subtitle: "Precision and Quality",
     icon: <FaScrewdriverWrench />,
     images: ["/37.webp", "/38.webp", "39.webp", "40.webp"],
-    path: "/services/car-part-damage-repair"
+    path: "/services/car-part-damage-repair",
   },
   {
     title: "Accident Repair",
     subtitle: "Fast, Reliable, and Professional",
     icon: <FaCarCrash />,
     images: ["/41.webp", "/42.webp", "43.webp", "44.webp"],
-    path: "/services/accident-repair"
+    path: "/services/accident-repair",
   },
   {
     title: "Vandal Scratch Removal",
     subtitle: "Efficient Restoration",
     icon: <FaPaintRoller />,
     images: ["/23.webp", "/24.webp", "25.webp", "26.webp"],
-    path: "/services/vandal-scratch-removal"
+    path: "/services/vandal-scratch-removal",
   },
   {
     title: "Paintless Dent Removal (PDR)",
     subtitle: "Preserve Your Original Paint",
     icon: <FaScrewdriver />,
     images: ["/6.webp", "/16.webp", "17.webp", "18.webp"],
-    path: "/services/paintless-dent-removal"
+    path: "/services/paintless-dent-removal",
   },
   {
     title: "Alloy Wheel Repair",
     subtitle: "Perfect Condition for Your Wheels",
     icon: <FaCar />,
-    images: ["/10.webp", "/11.webp", "12.webp", "13.webp"],
-    path: "/services/alloy-wheel-repair"
+    video: "/vedio.mp4", // <-- Use video instead of images
+    path: "/services/alloy-wheel-repair",
   },
   {
     title: "Machine Polishing",
     subtitle: "Restore the Shine of Your Car's Paint",
     icon: <FaStar />,
     images: ["/6.webp", "/7.webp", "8.webp", "9.webp"],
-    path: "/services/machine-polishing"
+    path: "/services/machine-polishing",
   },
   {
     title: "Mobile Repair",
     subtitle: "We Come to You",
     icon: <FaWrench />,
     images: ["/1.webp", "/2.webp", "3.webp", "4.webp"],
-    path: "/services/mobile-repair"
+    path: "/services/mobile-repair",
   },
 ];
 
 const ServiceUs = () => {
-  const [currentIndexes, setCurrentIndexes] = useState(Array(services.length).fill(0));
+  const [currentIndexes, setCurrentIndexes] = useState(
+    services.map((s) => (s.images ? 0 : null))
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndexes((prev) =>
-        prev.map((index, i) => (index + 1) % services[i].images.length)
+        prev.map((index, i) =>
+          services[i].images
+            ? (index + 1) % services[i].images.length
+            : null
+        )
       );
     }, 3000);
     return () => clearInterval(interval);
@@ -97,13 +111,25 @@ const ServiceUs = () => {
               <p className="text-sm text-gray-800">{service.subtitle}</p>
             </div>
 
-            {/* Image + Icon */}
+            {/* Image or Video + Icon */}
             <div className="relative w-full">
-              <img
-                src={service.images[currentIndexes[i]]}
-                alt={service.title}
-                className="w-[88%] ml-6 rounded h-52"
-              />
+              {service.video ? (
+                <video
+                  src={service.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-[88%] ml-6 rounded h-52 object-cover"
+                />
+              ) : (
+                <img
+                  src={service.images[currentIndexes[i]]}
+                  alt={service.title}
+                  className="w-[88%] ml-6 rounded h-52 object-cover"
+                />
+              )}
+
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white group-hover:bg-[#2E7BCF] text-[#2E7BCF] text-2xl group-hover:text-white rounded-full shadow p-2 transition-colors duration-300">
                 {service.icon}
               </div>

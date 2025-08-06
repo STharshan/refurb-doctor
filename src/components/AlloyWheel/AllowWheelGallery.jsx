@@ -39,20 +39,8 @@ const AllowWheelGallery = () => {
                     Alloy Wheel Repair - <span className="font-normal text-gray-500 text-xl">Perfect Condition for Your Wheels</span>
                 </h2>
 
-                {/* Video */}
-                <div>
-                    <video
-                        src="/vedio.mp4" // Replace with your actual path
-                        controls
-                        autoPlay
-                        loop
-                        muted
-                        className="w-full rounded-lg shadow-md"
-                    />
-                </div>
-
                 {/* Scrollable Images */}
-                {/* <div
+                <div
                     ref={scrollRef}
                     className="mt-6 flex space-x-4 overflow-x-hidden no-scrollbar scroll-smooth max-w-250 -ml-1 mx-auto"
                 >
@@ -64,7 +52,7 @@ const AllowWheelGallery = () => {
                             className="h-60 md:h-72 w-80 rounded-md shrink-0 object-cover"
                         />
                     ))}
-                </div> */}
+                </div>
             </div>
         </section>
     );
