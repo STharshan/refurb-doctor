@@ -12,11 +12,11 @@ import TermsAndConditions from "./pages/Term";
 import FullRespray from "./pages/FullRespray";
 import CarPart from "./pages/CarPart";
 import AccidentRepair from "./pages/AccidentRepair";
-import Vandal from "./pages/vandal";
 import Paintless from "./pages/Paintless";
 import AlloyWheel from "./pages/AlloyWheel";
 import Machine from "./pages/Machine";
 import Mobile from "./pages/Mobile";
+import Vandal from "./pages/vandal";
 
 
 function App() {
