@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* WhatsApp Button (Desktop Only) */}
         <div className="hidden md:block">
           <a
-            href="https://wa.me/your-number"
+            href="https://web.whatsapp.com/send?phone=+44 7795 528849"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-white font-semibold px-4 py-2 rounded-full flex items-center gap-2 hover:bg-green-600 transition"

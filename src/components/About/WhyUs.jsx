@@ -41,7 +41,7 @@ const WhyUs = () => {
                         <p className="text-gray-600 mb-6 max-w-80 mx-auto font-semibold">{feature.description}</p>
                         <div className="mb-5">
                             <a
-                                href="/contact"
+                                href="/#contact"  // Updated to point to the #contact section
                                 className="bg-[#2E7BCF] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition"
                             >
                                 CONTACT US

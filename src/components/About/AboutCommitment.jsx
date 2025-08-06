@@ -49,7 +49,7 @@ const AboutCommitment = () => {
                     <div>
                         <div className="bg-[#2E7BCF] text-white p-6 rounded-lg mb-6">
                             <h4 className="font-bold mb-2 text-lg">{current.label}</h4>
-                            <p >{current.content}</p>
+                            <p className="text-lg font-semibold">{current.content}</p>
                         </div>
                         <p className="text-gray-700 font-semibold">
                             At Refurb Doctor, we are committed to delivering exceptional automotive care with unmatched expertise and professionalism. Our team of skilled technicians ensures that every vehicle receives the highest standard of service, making us your trusted partner in automotive restoration and repair.

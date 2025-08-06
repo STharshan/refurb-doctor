@@ -21,7 +21,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#appointment"
+                href="#contact"
                 className="bg-[#2E7BCF] text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition text-center"
               >
                 Book an Appointment

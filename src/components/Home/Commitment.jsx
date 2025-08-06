@@ -30,14 +30,21 @@ const Commitment = () => {
                     Contact us today to schedule an appointment for any of our services. Our team is ready to assist you with all your automotive needs.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    {/* WhatsApp Button */}
                     <a
-                        href="tel:+447795528849"
+                        href="https://wa.me/447795528849?text=Hello, I'm interested in your services."
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-white text-[#2E7BCF] font-semibold px-8 py-3 rounded-lg shadow flex items-center justify-center gap-2"
                     >
                         <FaPhoneAlt /> +447795528849
                     </a>
-                    <button className="border-2 border-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition flex items-center gap-2">
-                        Contact Us <FaArrowRight/>
+                    {/* Contact Us Button */}
+                    <button
+                        onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                        className="border-2 border-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition flex items-center gap-2"
+                    >
+                        Contact Us <FaArrowRight />
                     </button>
                 </div>
             </div>
@@ -68,7 +75,7 @@ const Commitment = () => {
                     <div>
                         <div className="bg-[#2E7BCF] text-white p-6 rounded-lg mb-6">
                             <h4 className="font-bold mb-2 text-lg">{current.label}</h4>
-                            <p >{current.content}</p>
+                            <p className="font-semibold text-lg">{current.content}</p>
                         </div>
                         <p className="text-gray-700 font-semibold">
                             At Refurb Doctor, we are committed to delivering exceptional automotive care with unmatched expertise and professionalism. Our team of skilled technicians ensures that every vehicle receives the highest standard of service, making us your trusted partner in automotive restoration and repair.

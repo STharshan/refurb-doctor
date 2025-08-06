@@ -35,25 +35,25 @@ thanks for doing a great job 👍`,
         rating: 5,
     },
     {
-    name: "Jimmy T",
-    text: `Excellent service every time. Friendly, honest and will let you know if something isn't quite right to make sure they do a perfect job. Have taken 3 x cars here now and wouldn’t go anywhere else. Highly recommended!`,
-    rating: 5,
-  },
-  {
-    name: "Dave Keeble",
-    text: `First class quality job at a good price`,
-    rating: 5,
-  },
-  {
-    name: "Carol Ellis",
-    text: `I have used the refurb doctor now 2019 & today to have my DIAMOND CUT WHEEL REFURBED after my Husband had curbed my car yes ladies my husband curbed my car TWICE, the young lad has done a fantastic job.`,
-    rating: 5,
-  },
-   {
-    name: "Michal Uchanski",
-    text: `Painted my navy door black and it looks incredible thank you for the great job`,
-    rating: 5,
-  },
+        name: "Jimmy T",
+        text: `Excellent service every time. Friendly, honest and will let you know if something isn't quite right to make sure they do a perfect job. Have taken 3 x cars here now and wouldn’t go anywhere else. Highly recommended!`,
+        rating: 5,
+    },
+    {
+        name: "Dave Keeble",
+        text: `First class quality job at a good price`,
+        rating: 5,
+    },
+    {
+        name: "Carol Ellis",
+        text: `I have used the refurb doctor now 2019 & today to have my DIAMOND CUT WHEEL REFURBED after my Husband had curbed my car yes ladies my husband curbed my car TWICE, the young lad has done a fantastic job.`,
+        rating: 5,
+    },
+    {
+        name: "Michal Uchanski",
+        text: `Painted my navy door black and it looks incredible thank you for the great job`,
+        rating: 5,
+    },
 ];
 
 const Testimonials = () => {
@@ -102,11 +102,11 @@ const Testimonials = () => {
                 </button>
 
                 {/* Testimonial Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-10">
+                <div className="flex overflow-x-hidden space-x-6 mx-10">
                     {getVisibleTestimonials().map((t, idx) => (
                         <div
                             key={idx}
-                            className="bg-white p-6 rounded-lg shadow text-center transition duration-500 ease-in-out"
+                            className="min-w-[400px] bg-white p-6 rounded-lg shadow text-center transition duration-500 ease-in-out"
                         >
                             {/* Stars */}
                             <div className="flex justify-center text-yellow-400 mb-4">
@@ -114,7 +114,7 @@ const Testimonials = () => {
                                     <FaStar key={i} />
                                 ))}
                             </div>
-                            <p className="italic text-gray-700 text-lg leading-relaxed mb-4">
+                            <p className="italic text-gray-700 text-lg leading-relaxed mb-4 max-w-80 mx-auto">
                                 "{t.text}"
                             </p>
                             <p className="text-[#2E7BCF] text-xl font-bold">{t.name}</p>
@@ -131,6 +131,7 @@ const Testimonials = () => {
                 </button>
             </div>
 
+
             {/* Pagination Dots */}
             <div className="flex justify-center mt-6 space-x-2">
                 {testimonials.map((_, idx) => (
@@ -144,7 +145,10 @@ const Testimonials = () => {
 
             {/* View More Button */}
             <div className="text-center mt-10">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 font-semibold rounded">
+                <button
+                    onClick={() => window.open("https://www.google.no/search?sa=X&sca_esv=2c9e1e9a39f0ac3a&hl=no&biw=1536&bih=703&sxsrf=AE3TifO70TSq65-BUE32QQMJ1lQzh898IA:1748100184909&kgmid=/g/11jxthl28k&q=Refurbdoctor&shndl=30&shem=lcuae,uaasie&source=sh/x/loc/uni/m1/1", "_blank")}
+                    className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white px-6 py-3 font-semibold rounded"
+                >
                     View More
                 </button>
             </div>

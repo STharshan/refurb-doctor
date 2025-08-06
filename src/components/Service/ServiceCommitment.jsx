@@ -21,6 +21,10 @@ const ServiceCommitment = () => {
 
     const current = tabs.find((t) => t.key === activeTab);
 
+    const onContact = () => {
+
+    }
+
     return (
         <section className="bg-white">
             {/* Section 1: Call to Action */}
@@ -36,9 +40,9 @@ const ServiceCommitment = () => {
                     >
                         <FaPhoneAlt /> +447795528849
                     </a>
-                    <button className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition flex items-center gap-2">
+                    <a href="/#contact"  className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition flex items-center gap-2">
                         Contact Us <FaArrowRight />
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
