@@ -16,7 +16,7 @@ import Paintless from "./pages/Paintless";
 import AlloyWheel from "./pages/AlloyWheel";
 import Machine from "./pages/Machine";
 import Mobile from "./pages/Mobile";
-import Vandal from "./pages/vandal";
+import Vandal from "./pages/Vandal";
 
 
 function App() {
