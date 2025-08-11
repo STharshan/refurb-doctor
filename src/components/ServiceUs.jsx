@@ -20,10 +20,10 @@ const services = [
     path: "/services/full-respray",
   },
   {
-    title: "Car Part Damage Repair",
+    title: "Car Park Damage Repair",
     subtitle: "Precision and Quality",
     icon: <FaScrewdriverWrench />,
-    images: ["/37.webp", "/38.webp", "39.webp", "40.webp"],
+    images: ["/car park repair-1.jpg", "/car park repair-3.jpg", "car park repair-5.jpg", "car park repair-2.jpg"],
     path: "/services/car-part-damage-repair",
   },
   {
@@ -44,7 +44,7 @@ const services = [
     title: "Paintless Dent Removal (PDR)",
     subtitle: "Preserve Your Original Paint",
     icon: <FaScrewdriver />,
-    images: ["/6.webp", "/16.webp", "17.webp", "18.webp"],
+    video: "/PDR.mp4",
     path: "/services/paintless-dent-removal",
   },
   {
@@ -58,14 +58,14 @@ const services = [
     title: "Machine Polishing",
     subtitle: "Restore the Shine of Your Car's Paint",
     icon: <FaStar />,
-    images: ["/6.webp", "/7.webp", "8.webp", "9.webp"],
+    images: ["/machine polishing-1.jpg", "/machine polishing-2.jpg", "machine polishing-3.jpg", "machine polishing-4.jpg"],
     path: "/services/machine-polishing",
   },
   {
     title: "Mobile Repair",
     subtitle: "We Come to You",
     icon: <FaWrench />,
-    images: ["/1.webp", "/2.webp", "3.webp", "4.webp"],
+    video: "/mobile.mp4",
     path: "/services/mobile-repair",
   },
 ];

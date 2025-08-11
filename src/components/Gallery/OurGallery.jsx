@@ -8,7 +8,7 @@ const categories = [
     "Paintless Dent Removal",
     "Vandak Scratch Removal",
     "Accident Repair",
-    "Car Part Damage Repair",
+    "Car Park Damage Repair",
     "Full Respray"
 ];
 
@@ -34,19 +34,19 @@ const allItems = [
         category: "Mobile Repair"
     },
     {
-        image: "/6.webp",
+        image: "/machine polishing-1.jpg",
         category: "Machine Polishing"
     },
     {
-        image: "/7.webp",
+        image: "/machine polishing-2.jpg",
         category: "Machine Polishing"
     },
     {
-        image: "/8.webp",
+        image: "/machine polishing-3.jpg",
         category: "Machine Polishing"
     },
     {
-        image: "/9.webp",
+        image: "/machine polishing-4.jpg",
         category: "Machine Polishing"
     },
     {
@@ -158,20 +158,28 @@ const allItems = [
         category: "Full Respray"
     },
     {
-        image: "/37.webp",
-        category: "Car Part Damage Repair"
+        image: "/car park repair-1.jpg",
+        category: "Car Park Damage Repair"
     },
     {
-        image: "/38.webp",
-        category: "Car Part Damage Repair"
+        image: "/car park repair-2.jpg",
+        category: "Car Park Damage Repair"
     },
     {
-        image: "/39.webp",
-        category: "Car Part Damage Repair"
+        image: "/car park repair-3.jpg",
+        category: "Car Park Damage Repair"
     },
     {
-        image: "/40.webp",
-        category: "Car Part Damage Repair"
+        image: "/car park repair-4.jpg",
+        category: "Car Park Damage Repair"
+    },
+    {
+        image: "/car park repair-5.jpg",
+        category: "Car Park Damage Repair"
+    },
+    {
+        image: "/car park repair-6.jpg",
+        category: "Car Park Damage Repair"
     },
     {
         image: "/41.webp",
