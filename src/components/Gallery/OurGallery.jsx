@@ -53,11 +53,6 @@ const allItems = [
         image: "/pdr7.jpg",
         category: "Paintless Dent Removal",
     },
-  
-    {
-        image: "/27.webp",
-        category: "Full Respray",
-    },
     {
         image: "/28.webp",
         category: "Full Respray",
