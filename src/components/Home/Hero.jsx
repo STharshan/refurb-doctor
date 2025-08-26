@@ -17,9 +17,14 @@ const Hero = () => {
           style={{ objectFit: 'cover' }}
         >
           <source src="/back.mp4" type="video/mp4" />
+          <img
+            src="/fallback-image.jpg" // Replace with your fallback image path
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
         </video>
       </div>
-      <div className="bg-neutral-900 w-full min-h-screen opacity-80 ">
+      <div className="bg-neutral-900 w-full min-h-screen opacity-80">
         <div className="max-w-6xl mx-auto px-6 md:px-1">
           <div className="text-white max-w-2xl space-y-7 py-20 mt-25">
             <h1 className="text-4xl md:text-6xl font-extrabold">

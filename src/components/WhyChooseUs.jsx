@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
 
             <div className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:grid md:grid-cols-3 gap-0 max-w-7xl mx-auto">
                 {/* Left Tabs */}
-                <div className="flex flex-row md:flex-col bg-white">
+                <div className="flex flex-row md:flex-col bg-white md:mt-40">
                     {tabs.map((tab) => {
                         const isActive = activeTab === tab.key;
                         return (
@@ -123,7 +123,7 @@ const WhyChooseUs = () => {
                     <img
                         src={current.image}
                         alt={current.label}
-                        className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-md shadow-md object-cover"
+                        className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-md shadow-md object-cover md:h-120 md:mt-20"
                         style={{ maxHeight: 260, minHeight: 140 }}
                     />
                 </div>
