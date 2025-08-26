@@ -16,28 +16,28 @@ const services = [
     title: "Full Respray",
     subtitle: "For a Fresh Look",
     icon: <FaSprayCan />,
-    images: ["/31.webp", "/32.webp", "33.webp", "34.webp"],
+    images: ["/31.webp", "/32.webp", "/33.webp", "/34.webp"],
     path: "/services/full-respray",
   },
   {
     title: "Car Park Damage Repair",
     subtitle: "Precision and Quality",
     icon: <FaScrewdriverWrench />,
-    images: ["/car park repair-1.jpg", "/car park repair-3.jpg", "car park repair-5.jpg", "car park repair-2.jpg"],
+    images: ["/car park repair-1.jpg", "/car park repair-3.jpg", "/car park repair-5.jpg", "/car park repair-2.jpg"],
     path: "/services/car-part-damage-repair",
   },
   {
     title: "Accident Repair",
     subtitle: "Fast, Reliable, and Professional",
     icon: <FaCarCrash />,
-    images: ["/41.webp", "/42.webp", "43.webp", "44.webp"],
+    images: ["/41.webp", "/42.webp", "/43.webp", "/44.webp"],
     path: "/services/accident-repair",
   },
   {
     title: "Vandal Scratch Removal",
     subtitle: "Efficient Restoration",
     icon: <FaPaintRoller />,
-    images: ["/23.webp", "/24.webp", "25.webp", "26.webp"],
+    video : "Vandal.mp4",
     path: "/services/vandal-scratch-removal",
   },
   {
@@ -51,14 +51,14 @@ const services = [
     title: "Alloy Wheel Repair",
     subtitle: "Perfect Condition for Your Wheels",
     icon: <FaCar />,
-    video: "/vedio.mp4", // <-- Use video instead of images
+    video: "/Alloy.mp4", // <-- Use video instead of images
     path: "/services/alloy-wheel-repair",
   },
   {
     title: "Machine Polishing",
     subtitle: "Restore the Shine of Your Car's Paint",
     icon: <FaStar />,
-    images: ["/machine polishing-1.jpg", "/machine polishing-2.jpg", "machine polishing-3.jpg", "machine polishing-4.jpg"],
+    images: ["/machine polishing-1.jpg", "/machine polishing-2.jpg", "/machine polishing-3.jpg", "/machine polishing-4.jpg"],
     path: "/services/machine-polishing",
   },
   {

@@ -55,16 +55,37 @@ const Footer = () => {
         </div>
 
         {/* Our Services */}
+        {/* Our Services */}
         <div>
           <h4 className="font-bold text-2xl mb-4">Our Services</h4>
           <ul className="space-y-2 font-semibold text-gray-300">
-            <li className='hover:text-[#2E7BCF]'>Full Respray</li>
-            <li className='hover:text-[#2E7BCF]'>Car Part Damage</li>
-            <li className='hover:text-[#2E7BCF]'>Accident Repair</li>
-            <li className='hover:text-[#2E7BCF]'>Vandal Scratches</li>
-            <li className='hover:text-[#2E7BCF]'>Paintless Dent Removal</li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/full-respray">Full Respray</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/car-part-damage-repair">Car Part Damage</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/accident-repair">Accident Repair</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/vandal-scratch-removal">Vandal Scratches</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/paintless-dent-removal">Paintless Dent Removal</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/alloy-wheel-repair">Alloy Wheel Repair</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/machine-polishing">Machine Polishing</Link>
+            </li>
+            <li className='hover:text-[#2E7BCF]'>
+              <Link to="/services/mobile-repair">Mobile Repair</Link>
+            </li>
           </ul>
         </div>
+
 
         {/* Business Hours */}
         <div>
@@ -93,7 +114,7 @@ const Footer = () => {
             href="https://www.ansely.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-white hover:text-[#2E7BCF] transition"
+            className="font-semibold text-white hover:text-[#2E7BCF] transition hover:underline"
           >
             Ansely
           </a>

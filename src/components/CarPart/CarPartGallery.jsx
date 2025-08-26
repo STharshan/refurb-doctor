@@ -3,10 +3,11 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const images = [
-    "/31.webp",
-    "/32.webp",
-    "/34.webp",
-    "/35.webp",
+    "/car park repair-1.jpg", 
+    "/car park repair-3.jpg", 
+    "/car park repair-5.jpg", 
+    "/car park repair-2.jpg"
+   
 ];
 
 const CarPartGallery = () => {
@@ -36,7 +37,7 @@ const CarPartGallery = () => {
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-[#2E7BCF] mb-20">
-                    Full Respray <span className="font-normal text-gray-500 text-xl"> - For a Fresh Look</span>
+                    Car Park Damage<span className="font-normal text-gray-500 text-xl"></span>
                 </h2>
 
                 {/* Scrollable Images */}

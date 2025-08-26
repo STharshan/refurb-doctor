@@ -1,60 +1,41 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const images = [
-    "/17.webp",
-    "/18.webp",
-    "/19.webp",
-    "/20.webp",
-];
-
 const PaintlessGallery = () => {
-    const scrollRef = useRef(null);
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    // Auto-scroll effect
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (scrollRef.current) {
-                scrollRef.current.scrollLeft += 1;
-            }
-        }, 0); // Speed of scroll
-        return () => clearInterval(interval);
-    }, []);
+  return (
+    <section className="px-4 py-10 lg:px-20 ">
+      <div className="max-w-6xl mx-auto text-left">
+        {/* Header */}
+        <div
+          onClick={() => navigate("/services")}
+          className="flex items-center gap-2 mb-6 text-[#2E7BCF] font-semibold text-lg cursor-pointer mt-20"
+        >
+          <FaArrowLeft />
+          <span>Back</span>
+        </div>
 
-    return (
-        <section className="px-4 py-10 lg:px-20 ">
-            <div className="max-w-6xl mx-auto text-left">
-                {/* Header */}
-                <div
-                    onClick={() => navigate("/services")}
-                    className="flex items-center gap-2 mb-6 text-[#2E7BCF] font-semibold text-lg cursor-pointer mt-20"
-                >
-                    <FaArrowLeft />
-                    <span>Back</span>
-                </div>
+        <h2 className="text-2xl md:text-3xl font-bold text-[#2E7BCF] mb-5">
+          Paintless Dent Removal (PDR) - <span className="font-normal text-gray-500 text-xl">Preserve Your Original Paint</span>
+        </h2>
 
-                <h2 className="text-2xl md:text-3xl font-bold text-[#2E7BCF] mb-20">
-                    Paintless Dent Removal (PDR) - <span className="font-normal text-gray-500 text-xl">Preserve Your Original Paint</span>
-                </h2>
-                {/* Scrollable Images */}
-                <div
-                    ref={scrollRef}
-                    className="mt-6 flex space-x-4 overflow-x-hidden no-scrollbar scroll-smooth max-w-250 -ml-1 mx-auto"
-                >
-                    {images.map((src, index) => (
-                        <img
-                            key={index}
-                            src={src}
-                            alt={`respray-${index}`}
-                            className="h-60 md:h-72 w-80 rounded-md shrink-0 object-cover"
-                        />
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
+        {/* Video */}
+        <div className="mx-auto">
+          <video
+            autoPlay
+            muted
+            loop
+            className="w-full h-[400px] object-cover rounded-md"
+          >
+            <source src="/PDR.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default PaintlessGallery;

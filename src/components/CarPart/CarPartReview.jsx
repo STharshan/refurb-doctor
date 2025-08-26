@@ -1,74 +1,101 @@
 import React from "react";
 
 const steps = [
-    {
-        title: "Initial Assessment",
-        description:
-            "We begin with a comprehensive inspection of your vehicle to evaluate the condition of the current paintwork and discuss your desired outcome.",
-    },
-    {
-        title: "Quotation & Consultation",
-        description:
-            "You'll receive a detailed, transparent quote outlining the scope of work, materials used, timeframe, and cost breakdown. We'll also consult with you on colour options and finishes.",
-    },
-    {
-        title: "Surface Preparation",
-        description:
-            "This includes stripping old paint if necessary, sanding, treating rust or dents, applying primer, and masking non-painted areas for protection.",
-    },
-    {
-        title: "Painting & Finishing",
-        description:
-            "Using a dust-free spray booth and high-precision equipment, we apply multiple layers of paint and clear coat to achieve a high-gloss, factory-grade finish.",
-    },
-    {
-        title: "Curing & Polishing",
-        description:
-            "The freshly painted vehicle is cured in a temperature-controlled environment, then finished and buffed to ensure a stunning, smooth finish.",
-    },
-    {
-        title: "Final Inspection & Delivery",
-        description:
-            "Before handing your car back, we conduct a rigorous quality check to ensure every detail meets our high standards. We include care tips to help maintain your car’s new look.",
-    },
+  {
+    title: "Common Types of Car Park Damage",
+    description: (
+      <ul className="list-inside list-disc font-semibold">
+        <li>Dents & Dings – Caused by other car doors, trolleys, or low-speed bumps.</li>
+        <li>Scratches – From keys, rough walls, or careless trolley movement.</li>
+        <li>Bumper Scuffs – Often happen during reversing or misjudged parking.</li>
+        <li>Mirror & Panel Damage – Due to tight spaces and vehicles parked too closely.</li>
+      </ul>
+    ),
+  },
+  {
+    title: "How Car Park Damage Happens",
+    description: (
+      <ul className="list-inside list-disc font-semibold">
+        <li>Narrow or poorly marked bays</li>
+        <li>Busy and congested car parks</li>
+        <li>Distracted or rushed drivers</li>
+        <li>Poor lighting or low visibility</li>
+        <li>Shopping trolleys and pedestrian movement around vehicles</li>
+      </ul>
+    ),
+  },
+  {
+    title: "The Hidden Costs of Damage",
+    description: (
+      <ul className="list-inside list-disc font-semibold">
+        <li>Reduced resale or trade-in value</li>
+        <li>Increased insurance premiums from repeated claims</li>
+        <li>Long-term damage such as rust or corrosion if repairs are delayed</li>
+      </ul>
+    ),
+  },
+  {
+    title: "The Impact on Vehicle Owners",
+    description: (
+      <ul className="list-inside list-disc font-semibold">
+        <li>Cosmetic Appearance – Cars look older and less cared for.</li>
+        <li>Financial Impact – Repair costs can add up, especially if ignored.</li>
+        <li>Inconvenience – Time spent arranging repairs or dealing with insurance claims.</li>
+      </ul>
+    ),
+  },
+  {
+    title: "How to Prevent Car Park Damage",
+    description: (
+      <ul className="list-inside list-disc font-semibold">
+        <li>Park away from entrances and congested areas</li>
+        <li>Choose wider or quieter spaces where possible</li>
+        <li>Fold in wing mirrors in tight bays</li>
+        <li>Avoid parking next to poorly parked or damaged vehicles</li>
+        <li>Be cautious with doors and trolleys around other cars</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Repair & Restoration Solutions",
+    description: (
+      <ul className="list-inside list-disc font-semibold">
+        <li>Paintless Dent Removal (PDR) – Removes dents without respraying.</li>
+        <li>Scratch & Scuff Repairs – Localised fixes for panels and bumpers.</li>
+        <li>Smart Repairs – Target only the damaged area for cost-effective results.</li>
+      </ul>
+    ),
+  },
 ];
 
 const CarPartOverview = () => {
-    return (
-        <div className="px-4 py-10 max-w-6xl mx-auto text-left text-gray-800">
-            <h2 className="text-2xl  font-bold text-[#2E7BCF]">Overview</h2>
-            <p className="mt-2 text-lg font-semibold max-w-6xl mx-auto mb-5">
-                Transform your vehicle with our Full Respray – For a Fresh Look service, designed to restore or reinvent your car’s appearance with precision and style. Whether you’re rejuvenating a faded finish, repairing weathered paint, or opting for a bold new colour, our expert team ensures a factory-quality finish that turns heads on the road.
-            </p>
-            <p className="mt-4 text-lg font-semibold max-w-6xl mx-auto mb-5">
-                Our highly skilled painters combine years of experience with advanced techniques and premium-grade automotive paints to deliver exceptional, long-lasting results. From luxury cars to everyday vehicles, we treat every respray project with meticulous attention to detail.
-            </p>
-            <p className="mt-4 text-lg font-semibold mb-15  max-w-6xl mx-auto">
-                Whether your goal is to maintain your car’s resale value, correct imperfections, or simply express your personal style, our full respray service offers a tailored solution that makes your vehicle look brand new again.
-            </p>
+  return (
+    <div className="px-4 py-10 max-w-6xl mx-auto text-left text-gray-800">
+      <h2 className="text-2xl font-bold text-[#2E7BCF]">Overview</h2>
+      <p className="mt-2 text-lg font-semibold max-w-6xl mx-auto mb-5">
+        Car park damage refers to the dents, scratches, scuffs, and other cosmetic or structural issues that occur while a vehicle is parked or maneuvering in a car park. With tight spaces, high traffic, and limited visibility, car parks are one of the most common places for minor vehicle damage.
+      </p>
 
-            {/* Process Section */}
-            <div className="mt-10 bg-[#2E7BCF] rounded-lg p-6 sm:p-10 text-left">
-                <h3 className="text-2xl font-bold text-white border-b-4  border-white inline-block mb-6">
-                    Our Process
-                </h3>
+      {/* Process Section */}
+      <div className="mt-10 bg-[#2E7BCF] rounded-lg p-6 sm:p-10 text-left">
+        <h3 className="text-2xl font-bold text-white border-b-4 border-white inline-block mb-6">
+          Our Process
+        </h3>
 
-                <div className="grid gap-6 sm:grid-cols-2">
-                    {steps.map((step, index) => (
-                        <div
-                            key={index}
-                            className="bg-[#5299e6] text-white p-6 rounded shadow-sm transform transition duration-400 ease-in-out hover:scale-105 hover:z-5 relative"
-                        >
-                            <h4 className="font-bold text-xl mb-2">
-                                {step.title}
-                            </h4>
-                            <p className="font-semibold">{step.description}</p>
-                        </div>
-                    ))}
-                </div>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="bg-[#5299e6] text-white p-6 rounded shadow-sm transform transition duration-400 ease-in-out hover:scale-105 hover:z-5 relative"
+            >
+              <h4 className="font-bold text-xl mb-2">{step.title}</h4>
+              <div>{step.description}</div>
             </div>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default CarPartOverview;

@@ -18,18 +18,29 @@ const ContactSection = () => {
               <FaMapMarkerAlt size={20} className="mt-5" />
               <div>
                 <p className="font-semibold text-xl">Location</p>
-                <p className="text-white/90 font-semibold">
-                  Torrington Avenue, Unit E, Templar Industrial Park, Coventry<br />
-                  CV4 9AP, Storbritannia
-                </p>
+                <a
+                  href="https://www.google.com/maps?q=Torrington+Avenue,+Unit+E,+Templar+Industrial+Park,+Coventry,+CV4+9AP,+Storbritannia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/90 font-semibold hover:underline"
+                >
+                  Torrington Avenue, Unit E, Templar Industrial Park, Coventry
+                  <br />
+                  CV4 9AP, Storbritannia, United Kingdom
+                </a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <FaPhoneAlt size={20} className="mt-4" />
               <div>
-                <p className="font-semibold text-xl ">Phone</p>
-                <p className="text-white/90 font-semibold">07795 528849</p>
+                <p className="font-semibold text-xl">Phone</p>
+                <a
+                  href="tel:+447581730734"
+                  className="text-white/90 font-semibold hover:underline"
+                >
+                  +447581 730734
+                </a>
               </div>
             </div>
 
@@ -37,7 +48,14 @@ const ContactSection = () => {
               <FaEnvelope size={20} className="mt-4" />
               <div>
                 <p className="font-semibold text-xl">Email</p>
-                <p className="text-white/90 font-semibold">refurbdoctor@live.co.uk</p>
+                <a
+                  href="mailto:refurbdoctor@live.co.uk"
+                  className="text-white/90 font-semibold hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  refurbdoctor@live.co.uk
+                </a>
               </div>
             </div>
           </div>

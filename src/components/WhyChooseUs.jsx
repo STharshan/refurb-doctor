@@ -9,14 +9,15 @@ const tabs = [
         icon: <FiUser />,
         title: "DELIVERING EXCELLENCE IN CAR REPAIR AND REFURBISHMENT",
         description:
-            "Choose Refurb Doctor for our proven track record of quality service, competitive pricing, and customer-focused approach. We bring professional expertise directly to your doorstep.",
+            "Refurb Doctor was founded in 2009 by Darren with a passion for delivering excellent service and a desire to offer customers a better, more convenient way to repair their vehicles. Starting with just a single repair van, Darren built the business on quality, trust, and a customer-first approach.",
+        desc: "With Sean joining as a partner, the company modernised and expanded, growing into a family-based team with multiple mobile repair vans and two fully equipped workshops. Over the years, we’ve earned a trusted reputation across the Midlands, working with certified dealers and private customers alike.",
         points: [
-            "Flexible mobile repair services",
-            "Competitive and transparent pricing",
-            "High-quality materials and workmanship",
-            "Efficient and timely service delivery",
+            "Founded on quality service and customer care",
+            "Grown from 1 van to multiple mobile repair units",
+            "Now operating 2 fully equipped workshops",
+            "Trusted by certified dealers and local customers across the Midlands",
         ],
-        image: "/car.avif",
+        image: "/why.jpg",
     },
     {
         key: "who",
@@ -24,14 +25,15 @@ const tabs = [
         icon: <PiMedalLight />,
         title: "YOUR TRUSTED PARTNER IN PROFESSIONAL CAR REPAIR AND REFURBISHMENT",
         description:
-            "Refurb Doctor is a team of experienced and certified technicians dedicated to providing exceptional car repair services. We combine expertise with convenience to deliver outstanding results.",
+            "We’re a family-based team of skilled, certified technicians committed to delivering the highest standard of car repair and refurbishment services. Our reputation is built on trust, transparency, and consistently excellent results.",
+        desc: "Working with certified dealers and private customers across the Midlands, we’re known for our customer-focused approach, professional workmanship, and the convenience of mobile service that fits around your schedule.",
         points: [
-            "Experienced and certified technicians",
-            "Mobile repair service availability",
-            "Advanced repair techniques and tools",
-            "Customer satisfaction-focused approach",
+            "Family-run team with proven experience",
+            "Trusted by certified dealers across the Midlands",
+            "Customer-first approach with transparent pricing",
+            "Professional results at your doorstep or in our workshops",
         ],
-        image: "/car.avif",
+        image: "/why.jpg",
     },
     {
         key: "offer",
@@ -39,14 +41,16 @@ const tabs = [
         icon: <PiWrench />,
         title: "PROFESSIONAL CAR REPAIR AND REFURBISHMENT SERVICES WITH QUALITY GUARANTEE",
         description:
-            "At Refurb Doctor, we specialise in comprehensive car repair and refurbishment services. Our commitment to excellence ensures your vehicle receives the finest possible care with lasting results.",
+            "At Refurb Doctor, we provide a complete range of car repair and refurbishment services — from fixing dents, scratches, and bumper scuffs to full panel and bodywork restoration. Whether you choose our mobile repair service or visit one of our fully equipped workshops, you’ll receive the same professional standard every time.",
+        desc: "Our focus is on delivering outstanding results with minimal disruption to your day, combining expert craftsmanship with convenience and transparency.",
         points: [
             "Expert mobile repair services at your location",
-            "High-quality materials and professional tools",
-            "Competitive and transparent pricing",
-            "Swift and efficient service delivery",
+            "Fully equipped workshops for larger repairs",
+            "High-quality materials and professional workmanship",
+            "Competitive and transparent pricing with no hidden costs",
+            "Swift and efficient service delivery you can rely on",
         ],
-        image: "/car.avif",
+        image: "/why.jpg",
     },
 ];
 
@@ -70,7 +74,7 @@ const WhyChooseUs = () => {
 
             <div className="bg-white rounded-xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 {/* Left Tabs */}
-                <div className="bg-white">
+                <div className="bg-white mt-40">
                     {tabs.map((tab) => {
                         const isActive = activeTab === tab.key;
                         return (
@@ -106,6 +110,7 @@ const WhyChooseUs = () => {
                     <h4 className="text-[#2E7BCF] text-xl font-bold mb-4">{current.label}</h4>
                     <h3 className="text-xl font-bold mb-4">{current.title}</h3>
                     <p className="text-gray-700 font-semibold mb-4">{current.description}</p>
+                    <p className="text-gray-700 font-semibold mb-4">{current.desc}</p>
                     <ul className="list-disc pl-5 font-semibold text-gray-700 space-y-3">
                         {current.points.map((point, index) => (
                             <li key={index}>{point}</li>
@@ -114,11 +119,11 @@ const WhyChooseUs = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="p-4 md:p-6 ">
+                <div className="p-4 md:p-6 mt-20">
                     <img
                         src={current.image}
                         alt={current.label}
-                        className="w-full h-80 mt-5 rounded-md shadow-md object-cover"
+                        className="w-full h-120 mt-5 rounded-md shadow-md object-cover"
                     />
                 </div>
             </div>

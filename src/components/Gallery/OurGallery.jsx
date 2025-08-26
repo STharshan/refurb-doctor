@@ -66,31 +66,27 @@ const allItems = [
         category: "Alloy Wheel Repair"
     },
     {
-        image: "/14.webp",
+        image: "/pdr3.jpg",
         category: "Paintless Dent Removal"
     },
     {
-        image: "/6.webp",
+        image: "/pdr2.jpg",
         category: "Paintless Dent Removal"
     },
     {
-        image: "/16.webp",
+        image: "/pdr5.jpg",
         category: "Paintless Dent Removal"
     },
     {
-        image: "/17.webp",
+        image: "/pdr4.jpg",
         category: "Paintless Dent Removal"
     },
     {
-        image: "/18.webp",
+        image: "/pdr1.jpg",
         category: "Paintless Dent Removal"
     },
     {
-        image: "/19.webp",
-        category: "Paintless Dent Removal"
-    },
-    {
-        image: "/20.webp",
+        image: "/pdr7.jpg",
         category: "Paintless Dent Removal"
     },
     {

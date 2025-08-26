@@ -4,15 +4,17 @@ import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
 const tabs = [
     {
         key: "management",
-        label: "MANAGEMENT AND SUPERVISION",
+        label: "Commitment to Quality",
         content:
-            "Our experienced management team oversees every aspect of our operations to ensure quality service delivery. We maintain strict supervision protocols to guarantee professional standards in all our automotive services.",
+            "We are dedicated to delivering the highest standard of repair and refurbishment, no matter the size of the job. From small cosmetic fixes to full panel restorations, our skilled technicians use only quality materials and proven techniques to ensure lasting results that you can trust.",
+        content2 : "At Refurb Doctor, we pride ourselves on expert craftsmanship and attention to detail. Every repair is carried out with precision, ensuring your vehicle not only looks its best but is restored to a standard you’ll be proud of."    
     },
     {
         key: "mechanic",
-        label: "UNIFORMED, LICENSED MECHANIC",
+        label: "Commitment to Convenience & Transparency",
         content:
-            "Our licensed and uniformed mechanics deliver professional service on every visit. You can count on skilled and qualified experts who uphold the highest standards in car repair and maintenance.",
+            "We understand that car repairs can feel disruptive, which is why we’ve built our service around your convenience. Whether at your doorstep with our mobile repair vans or at one of our fully equipped workshops, we make the process simple, efficient, and stress-free.",
+        content2: "At Refurb Doctor, we put our customers first by providing clear, competitive pricing with no hidden costs. You’ll always know exactly what to expect, giving you peace of mind while we take care of your vehicle."
     },
 ];
 
@@ -37,7 +39,7 @@ const Commitment = () => {
                         rel="noopener noreferrer"
                         className="bg-white text-[#2E7BCF] font-semibold px-8 py-3 rounded-lg shadow flex items-center justify-center gap-2"
                     >
-                        <FaPhoneAlt /> +447795528849
+                        <FaPhoneAlt /> +447581 730734
                     </a>
                     {/* Contact Us Button */}
                     <button
@@ -76,6 +78,7 @@ const Commitment = () => {
                         <div className="bg-[#2E7BCF] text-white p-6 rounded-lg mb-6">
                             <h4 className="font-bold mb-2 text-lg">{current.label}</h4>
                             <p className="font-semibold text-lg">{current.content}</p>
+                            <p className="font-semibold text-lg mt-2">{current.content2}</p>
                         </div>
                         <p className="text-gray-700 font-semibold">
                             At Refurb Doctor, we are committed to delivering exceptional automotive care with unmatched expertise and professionalism. Our team of skilled technicians ensures that every vehicle receives the highest standard of service, making us your trusted partner in automotive restoration and repair.

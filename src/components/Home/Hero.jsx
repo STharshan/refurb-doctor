@@ -7,9 +7,18 @@ const Hero = () => {
     <section
       id="home"
       className="bg-cover bg-center bg-no-repeat min-h-screen flex"
-      style={{ backgroundImage: "url('/1.webp')" }}
     >
-      <div className="bg-black/50 w-full min-h-screen ">
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover"
+        >
+          <source src="/back.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className="bg-neutral-900 w-full min-h-screen opacity-80 ">
         <div className="max-w-6xl mx-auto px-6 md:px-1">
           <div className="text-white max-w-2xl space-y-7 py-20 mt-25">
             <h1 className="text-4xl md:text-6xl font-extrabold">
@@ -30,7 +39,7 @@ const Hero = () => {
                 href="tel:07795528849"
                 className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-700 transition text-center justify-center"
               >
-                <FaPhoneAlt /> 07795 528849
+                <FaPhoneAlt /> +447581 730734
               </a>
             </div>
           </div>
