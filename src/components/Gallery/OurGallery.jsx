@@ -6,7 +6,7 @@ const categories = [
     "Machine Polishing",
     "Alloy Wheel Repair",
     "Paintless Dent Removal",
-    "Vandak Scratch Removal",
+    "Vandal Scratch Removal",
     "Accident Repair",
     "Car Park Damage Repair",
     "Full Respray",
@@ -55,27 +55,27 @@ const allItems = [
     },
     {
         image: "/21.webp",
-        category: "Vandak Scratch Removal",
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/22.webp",
-        category: "Vandak Scratch Removal",
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/23.webp",
-        category: "Vandak Scratch Removal",
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/24.webp",
-        category: "Vandak Scratch Removal",
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/25.webp",
-        category: "Vandak Scratch Removal",
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/26.webp",
-        category: "Vandak Scratch Removal",
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/27.webp",
