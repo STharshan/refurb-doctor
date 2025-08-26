@@ -76,7 +76,7 @@ const Navbar = () => {
             ))}
             <li>
               <a
-                href="https://wa.me/your-number"
+                href="tel:+447581730734"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white font-semibold px-4 py-2 rounded-full flex items-center gap-2 hover:bg-green-600 transition"

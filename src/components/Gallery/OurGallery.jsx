@@ -53,30 +53,7 @@ const allItems = [
         image: "/pdr7.jpg",
         category: "Paintless Dent Removal",
     },
-    {
-        image: "/21.webp",
-        category: "Vandal Scratch Removal",
-    },
-    {
-        image: "/22.webp",
-        category: "Vandal Scratch Removal",
-    },
-    {
-        image: "/23.webp",
-        category: "Vandal Scratch Removal",
-    },
-    {
-        image: "/24.webp",
-        category: "Vandal Scratch Removal",
-    },
-    {
-        image: "/25.webp",
-        category: "Vandal Scratch Removal",
-    },
-    {
-        image: "/26.webp",
-        category: "Vandal Scratch Removal",
-    },
+  
     {
         image: "/27.webp",
         category: "Full Respray",
@@ -97,6 +74,10 @@ const allItems = [
     {
         image: "/Alloy.mp4", // Example video for Alloy Wheel Repair
         category: "Alloy Wheel Repair",
+    },
+        {
+        image: "/Vandal.mp4", 
+        category: "Vandal Scratch Removal",
     },
     {
         image: "/30.webp",
@@ -223,7 +204,7 @@ const OurGallery = () => {
                         key={i}
                         className="bg-[#0e1b0e]/90 rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-105 hover:z-10 hover:shadow-2xl"
                     >
-                        {item.category === "Mobile Repair" || item.category === "Alloy Wheel Repair" ? (
+                        {item.category === "Mobile Repair" || item.category === "Alloy Wheel Repair" || item.category === "Vandal Scratch Removal" ? (
                             <video className="w-full h-64 object-cover" autoPlay muted loop>
                                 <source src={item.image} type="video/mp4" />
                                 Your browser does not support the video tag.

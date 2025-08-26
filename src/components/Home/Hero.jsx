@@ -37,7 +37,7 @@ const Hero = () => {
                 Book an Appointment
               </a>
               <a
-                href="tel:07795528849"
+                href="tel:+447581 730734"
                 className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-700 transition text-center justify-center"
               >
                 <FaPhoneAlt /> +447581 730734
