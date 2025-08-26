@@ -14,7 +14,7 @@ const FindUsSection = () => {
           <div className="w-full h-[400px] rounded-md overflow-hidden shadow">
             <iframe
               title="Google Map"
-              src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0194044373263!2d-1.5741749235851387!3d52.39483914534186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b8b3640217b%3A0xbb3cdacdc43b3ebd!2sRefurbdoctor%2C%20Torrington%20Avenue%2C%20Unit%20E%2C%20Templar%20industrial%20park%2C%20Coventry%20CV4%209AP%2C%20United%20Kingdom!5e0!3m2!1sen!2slk!4v1699871234567!5m2!1sen!2slk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0194044373263!2d-1.5741749235851387!3d52.39483914534186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b8b3640217b%3A0xbb3cdacdc43b3ebd!2s9CXJ%2B43%20Coventry%2C%20United%20Kingdom!5e0!3m2!1sen!2slk!4v1699871234567!5m2!1sen!2slk"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -27,5 +27,6 @@ const FindUsSection = () => {
       </div>
     </section>
   );
-}; 
+};
+
 export default FindUsSection;

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-cover bg-center bg-no-repeat min-h-screen flex"
+      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex"
     >
       <div className="absolute inset-0">
         <video
@@ -14,6 +14,7 @@ const Hero = () => {
           loop
           muted
           className="w-full h-full object-cover"
+          style={{ objectFit: 'cover' }}
         >
           <source src="/back.mp4" type="video/mp4" />
         </video>
