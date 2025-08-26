@@ -3,10 +3,10 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const images = [
-    "/6.webp",
-    "/7.webp",
-    "/8.webp",
-    "/9.webp",
+    "/machine polishing-1.jpg",
+    "/machine polishing-2.jpg",
+    "/machine polishing-3.jpg",
+    "/machine polishing-4.jpg",
 ];
 
 const MachineGallery = () => {
