@@ -173,7 +173,7 @@ const Testimonials = () => {
                 <button
                     onClick={() =>
                         window.open(
-                            "https://www.google.no/search?sa=X&sca_esv=2c9e1e9a39f0ac3a&hl=no&biw=1536&bih=703&sxsrf=AE3TifO70TSq65-BUE32QQMJ1lQzh898IA:1748100184909&kgmid=/g/11jxthl28k&q=Refurbdoctor&shndl=30&shem=lcuae,uaasie&source=sh/x/loc/uni/m1/1",
+                            "https://share.google/PQk1swoC4ZcCplBat",
                             "_blank"
                         )
                     }
