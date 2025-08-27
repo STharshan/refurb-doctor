@@ -1,5 +1,5 @@
 // src/components/Hero.jsx
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Hero = () => {
