@@ -5,11 +5,28 @@ const Hero = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    // Trigger video play after component mount
-    const video = videoRef.current;
-    if (video) {
-      video.play().catch((err) => console.log("Autoplay failed", err));
-    }
+    const handleAutoplay = () => {
+      const video = videoRef.current;
+      if (video && video.paused) {
+        video.play().catch((err) => console.log("Autoplay failed", err));
+      }
+    };
+
+    // Trigger autoplay after a brief delay to avoid issues on page load
+    setTimeout(handleAutoplay, 500);
+
+    // Listen for visibility changes (if the user navigates back)
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        handleAutoplay();
+      }
+    };
+    
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, []);
 
   return (
@@ -28,6 +45,7 @@ const Hero = () => {
           style={{ objectFit: "cover" }}
         >
           <source src="/back.mp4" type="video/mp4" />
+          <source src="/back.webm" type="video/webm" />
         </video>
       </div>
       <div className="bg-black/30 w-full min-h-screen opacity-80">
