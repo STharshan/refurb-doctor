@@ -3,6 +3,24 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Hero = () => {
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true; // iOS requires muted for autoplay
+      video.playsInline = true;
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay failed — can handle fallback here
+          console.log("Autoplay prevented on first load");
+        });
+      }
+    }
+  }, []);
+
   return (
     <section
       id="home"
@@ -10,6 +28,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
