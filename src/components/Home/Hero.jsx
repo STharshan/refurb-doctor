@@ -18,7 +18,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
           style={{ objectFit: 'cover' }}
         >
-          <source src="/back.mp4" type="video/mp4" />
+          <source src="/back.webm" type="video" />
         </video>
 
       </div>
