@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Hero = () => {
   const videoRef = useRef(null);
