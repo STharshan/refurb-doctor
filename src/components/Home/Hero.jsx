@@ -68,7 +68,7 @@ const Hero = () => {
                 href="tel:+447581 730734"
                 className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-700 transition text-center justify-center"
               >
-                <FaPhoneAlt />+447795528849
+                <FaPhoneAlt />+447581730734
               </a>
                  <a
                 href="tel:+447581 730734"
