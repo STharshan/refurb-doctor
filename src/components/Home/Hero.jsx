@@ -13,7 +13,7 @@ const Hero = () => {
     };
 
     // Trigger autoplay after a brief delay to avoid issues on page load
-    setTimeout(handleAutoplay, 500);
+    setTimeout(handleAutoplay, 100);
 
     // Listen for visibility changes (if the user navigates back)
     const handleVisibilityChange = () => {
@@ -45,7 +45,6 @@ const Hero = () => {
           style={{ objectFit: "cover" }}
         >
           <source src="/back.mp4" type="video/mp4" />
-          <source src="/back.webm" type="video/webm" />
         </video>
       </div>
       <div className="bg-black/30 w-full min-h-screen opacity-80">
@@ -69,8 +68,15 @@ const Hero = () => {
                 href="tel:+447581 730734"
                 className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-700 transition text-center justify-center"
               >
-                <FaPhoneAlt /> +447581 730734
+                <FaPhoneAlt />+447795528849
               </a>
+                 <a
+                href="tel:+447581 730734"
+                className="bg-gray-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 hover:bg-gray-700 transition text-center justify-center"
+              >
+                <FaPhoneAlt />+447795528849
+              </a>
+          
             </div>
           </div>
         </div>
