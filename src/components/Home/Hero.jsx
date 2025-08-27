@@ -14,8 +14,9 @@ const Hero = () => {
           loop
           muted
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: "cover" }}
         >
           <source src="/back.mp4" type="video/mp4" />
         </video>
