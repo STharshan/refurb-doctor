@@ -1,8 +1,16 @@
-// src/components/Hero.jsx
-import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import React, { useEffect, useRef } from "react";
 
 const Hero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // Trigger video play after component mount
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch((err) => console.log("Autoplay failed", err));
+    }
+  }, []);
+
   return (
     <section
       id="home"
@@ -10,17 +18,16 @@ const Hero = () => {
     >
       <div className="absolute inset-0">
         <video
-          autoPlay
+          ref={videoRef}
           loop
           muted
           playsInline
           preload="auto"
           className="w-full h-full object-cover"
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: "cover" }}
         >
-          <source src="/back.webm" type="video" />
+          <source src="/back.mp4" type="video/mp4" />
         </video>
-
       </div>
       <div className="bg-black/30 w-full min-h-screen opacity-80">
         <div className="max-w-6xl mx-auto px-6 md:px-1">
