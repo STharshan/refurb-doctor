@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const highlights = [
   {
@@ -72,12 +73,12 @@ const PaintlessHighlightsSection = () => {
           <h3 className="text-[#2E7BCF] font-bold text-2xl mb-5">
             Don't let minor dents take away from your car's value and appearance. Get expert, paint-free dent removal with fast results and no hassle. Book your free inspection today!?
           </h3>
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"  // Use the Link component with the anchor to scroll
             className="inline-block bg-[#2E7BCF] hover:bg-blue-700 text-white font-semibold px-7 py-2 rounded-full transition"
           >
             Book Your Free Assessment
-          </a>
+          </Link>
         </div>
       </div>
     </section>

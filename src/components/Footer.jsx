@@ -14,7 +14,7 @@ const Footer = () => {
             Professional auto repair services for all makes and models. Quality work guaranteed.
           </p>
           <div className="flex space-x-3">
-            <a href="#" className="bg-gray-700 p-2 rounded-full transition hover:bg-[#2E7BCF]">
+            <a href="https://web.facebook.com/RefurbdoctorLtd/?_rdc=1&_rdr#" className="bg-gray-700 p-2 rounded-full transition hover:bg-[#2E7BCF]">
               <FaFacebookF className='text-xl' />
             </a>
             <a href="#" className="bg-gray-700 p-2 rounded-full hover:bg-[#2E7BCF]  transition">

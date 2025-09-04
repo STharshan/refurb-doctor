@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const highlights = [
   {
@@ -70,14 +71,14 @@ const AccidentHighlightsSection = () => {
         {/* Call to Action */}
         <div className="bg-blue-100 p-6 mt-12 rounded-md text-left mb-10">
           <p className="text-2xl font-bold max-w-4xl text-[#2E7BCF] mb-4">
-           Accidents are unpredictable—but quality repairs shouldn't be. Let us handle the repairs with speed, precision, and professionalism. Contact us now to book an assessment or request assistance with your insurance claim.?
+            Accidents are unpredictable—but quality repairs shouldn't be. Let us handle the repairs with speed, precision, and professionalism. Contact us now to book an assessment or request assistance with your insurance claim.?
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"  // Use the Link component with the anchor to scroll
             className="inline-block bg-[#2E7BCF] hover:bg-blue-700 text-white font-semibold px-7 py-2 rounded-full transition"
           >
             Book Your Free Assessment
-          </a>
+          </Link>
         </div>
       </div>
     </section>

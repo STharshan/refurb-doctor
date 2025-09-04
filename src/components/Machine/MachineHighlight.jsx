@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const highlights = [
   {
@@ -72,12 +73,12 @@ const MachineHighlightsSection = () => {
           <h3 className="text-[#2E7BCF] font-bold text-2xl mb-5">
             Give your car the care it deserves. Book our professional machine polishing service today and restore that brilliant shine your vehicle was meant to have.?
           </h3>
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"  // Use the Link component with the anchor to scroll
             className="inline-block bg-[#2E7BCF] hover:bg-blue-700 text-white font-semibold px-7 py-2 rounded-full transition"
           >
             Book Your Free Assessment
-          </a>
+          </Link>
         </div>
       </div>
     </section>

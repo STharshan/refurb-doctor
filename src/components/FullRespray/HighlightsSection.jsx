@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const highlights = [
   {
@@ -82,12 +83,12 @@ const HighlightsSection = () => {
             Contact us today to schedule your free assessment and see how our
             full respray service can breathe new life into your car.
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"  // Use the Link component with the anchor to scroll
             className="inline-block bg-[#2E7BCF] hover:bg-blue-700 text-white font-semibold px-7 py-2 rounded-full transition"
           >
             Book Your Free Assessment
-          </a>
+          </Link>
         </div>
       </div>
     </section>
