@@ -132,7 +132,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                placeholder="Your Name*"
                 value={form.name}
                 onChange={handleChange}
                 className={`w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.name ? "border-red-500" : ""}`}
@@ -143,7 +143,7 @@ const ContactSection = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Your Email*"
                 value={form.email}
                 onChange={handleChange}
                 className={`w-full border rounded border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.email ? "border-red-500" : ""}`}
@@ -154,7 +154,7 @@ const ContactSection = () => {
               <input
                 type="tel"
                 name="phone"
-                placeholder="Your Phone"
+                placeholder="Your Phone*"
                 value={form.phone}
                 onChange={handleChange}
                 className={`w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.phone ? "border-red-500" : ""}`}
@@ -165,7 +165,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 name="address"
-                placeholder="Address"
+                placeholder="Address*"
                 value={form.address}
                 onChange={handleChange}
                 className={`w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.address ? "border-red-500" : ""}`}
@@ -175,7 +175,7 @@ const ContactSection = () => {
             <div>
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="Your Message*"
                 rows="4"
                 value={form.message}
                 onChange={handleChange}
