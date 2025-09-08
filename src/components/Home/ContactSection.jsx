@@ -29,6 +29,7 @@ const ContactSection = () => {
     if (!form.phone.trim()) newErrors.phone = "Phone number is required.";
     else if (!phoneRegex.test(form.phone)) newErrors.phone = "Enter a valid UK phone number.";
     if (!form.address.trim()) newErrors.address = "Address is required.";
+    if (!form.message.trim()) newErrors.message = "Message is required."; // Added validation for message
     return newErrors;
   };
 
@@ -101,7 +102,7 @@ const ContactSection = () => {
                   className="text-white/90 font-semibold hover:underline"
                 >
                   +447581 730734
-                  <br/>
+                  <br />
                   +447795 528849
                 </a>
               </div>
@@ -178,9 +179,9 @@ const ContactSection = () => {
                 rows="4"
                 value={form.message}
                 onChange={handleChange}
-                className="w-full border rounded px-4 py-2 border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className={`w-full border rounded px-4 py-2 border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.message ? "border-red-500" : ""}`}
               ></textarea>
-              {/* Message is optional, so no error */}
+              {errors.message && <span className="text-red-500 text-sm">{errors.message}</span>} {/* Error message */}
             </div>
             <button
               type="submit"
