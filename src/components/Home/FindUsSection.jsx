@@ -12,7 +12,7 @@ const FindUsSection = () => {
           {/* Map iframe */}
           <div className="w-full h-[400px] rounded-md overflow-hidden shadow">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1023.5738890652815!2d-1.5705523767506497!3d52.39792733764277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x48774b65209c1625%3A0x25a4c26ea87b1c06!2sTorrington%20Avenue%2C%20Unit%20E%2C%20Templar%20industrial%20park%2C%20Coventry%20CV4%209AP%2C%20United%20Kingdom!3m2!1d52.397808!2d-1.5698054!5e0!3m2!1sen!2slk!4v1756217058102!5m2!1sen!2slk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.488903888621!2d-1.5723369241257752!3d52.397814945269594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b65209c1625%3A0x25a4c26ea87b1c06!2sRefurbdoctor!5e0!3m2!1sen!2slk!4v1757660052108!5m2!1sen!2slk"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

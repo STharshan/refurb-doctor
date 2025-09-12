@@ -87,9 +87,7 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="text-white/90 font-semibold hover:underline"
                 >
-                  Torrington Avenue, Unit E, Templar Industrial Park, Coventry
-                  <br />
-                  CV4 9AP, Storbritannia, United Kingdom
+                  Torrington Avenue, Unit E, Templar industrial park, Coventry CV4 9AP
                 </a>
               </div>
             </div>

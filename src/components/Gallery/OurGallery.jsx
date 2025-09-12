@@ -54,14 +54,6 @@ const allItems = [
         category: "Paintless Dent Removal",
     },
     {
-        image: "/28.webp",
-        category: "Full Respray",
-    },
-    {
-        image: "/29.webp",
-        category: "Full Respray",
-    },
-    {
         image: "/mobile.mp4", // Example video for Mobile Repair
         category: "Mobile Repair",
     },
@@ -70,9 +62,21 @@ const allItems = [
         image: "/Alloy.mp4", // Example video for Alloy Wheel Repair
         category: "Alloy Wheel Repair",
     },
-        {
-        image: "/Vandal.mp4", 
+    {
+        image: "/Vandal.mp4",
         category: "Vandal Scratch Removal",
+    },
+    {
+        image: "/28.webp",
+        category: "Full Respray",
+    },
+    {
+        image: "/33.webp",
+        category: "Full Respray",
+    },
+    {
+        image: "/29.webp",
+        category: "Full Respray",
     },
     {
         image: "/30.webp",
@@ -87,19 +91,15 @@ const allItems = [
         category: "Full Respray",
     },
     {
-        image: "/33.webp",
-        category: "Full Respray",
-    },
-    {
         image: "/34.webp",
         category: "Full Respray",
     },
     {
-        image: "/35.webp",
+        image: "/36.webp",
         category: "Full Respray",
     },
     {
-        image: "/36.webp",
+        image: "/35.webp",
         category: "Full Respray",
     },
     {
@@ -131,6 +131,14 @@ const allItems = [
         category: "Accident Repair",
     },
     {
+        image: "/46.webp",
+        category: "Accident Repair",
+    },
+    {
+        image: "/48.webp",
+        category: "Accident Repair",
+    },
+    {
         image: "/42.webp",
         category: "Accident Repair",
     },
@@ -147,15 +155,7 @@ const allItems = [
         category: "Accident Repair",
     },
     {
-        image: "/46.webp",
-        category: "Accident Repair",
-    },
-    {
         image: "/47.webp",
-        category: "Accident Repair",
-    },
-    {
-        image: "/48.webp",
         category: "Accident Repair",
     },
 ];
@@ -183,8 +183,8 @@ const OurGallery = () => {
                         key={cat}
                         onClick={() => setSelected(cat)}
                         className={`px-4 py-2 rounded-3xl font-medium transition duration-300 ease-in-out ${selected === cat
-                                ? "bg-[#2E7BCF] text-white"
-                                : "bg-gray-200 text-gray-800 hover:bg-gray-400 hover:text-white"
+                            ? "bg-[#2E7BCF] text-white"
+                            : "bg-gray-200 text-gray-800 hover:bg-gray-400 hover:text-white"
                             }`}
                     >
                         {cat}
