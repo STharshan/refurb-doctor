@@ -154,10 +154,7 @@ const allItems = [
         image: "/45.webp",
         category: "Accident Repair",
     },
-    {
-        image: "/47.webp",
-        category: "Accident Repair",
-    },
+ 
 ];
 
 const OurGallery = () => {
