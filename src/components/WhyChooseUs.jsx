@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
 
             <div className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:grid lg:grid-cols-3 gap-0 max-w-7xl mx-auto">
                 {/* Left Tabs */}
-                <div className="flex flex-row md:flex-col bg-white md:mt-40">
+                <div className="flex flex-row md:flex-col bg-white md:mt-10 lg:mt-40">
                     {tabs.map((tab) => {
                         const isActive = activeTab === tab.key;
                         return (
@@ -82,25 +82,35 @@ const WhyChooseUs = () => {
                                 type="button"
                                 key={tab.key}
                                 onClick={() => setActiveTab(tab.key)}
-                                className={`flex-1 md:flex-none flex items-center gap-2 md:gap-4 p-3 sm:p-6 border-b md:border-b-0 md:border-t first:border-t-0 transition-all duration-200
-                                    ${isActive ? "bg-blue-50 md:border-l-4 border-[#2E7BCF]" : ""}
-                                `}
+                                className={`flex-1 md:flex-none flex items-center justify-center sm:justify-start gap-2 sm:gap-3 md:gap-4 
+      p-2 sm:p-4 md:p-6 border-b md:border-b-0 md:border-t first:border-t-0 
+      transition-all duration-200 
+      ${isActive ? "bg-blue-50 md:border-l-4 border-[#2E7BCF]" : ""} 
+  `}
                                 style={{ outline: "none" }}
                             >
                                 {/* Icon in circle */}
                                 <span
-                                    className={`flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 rounded-full text-xl sm:text-2xl
-                                        ${isActive ? "bg-[#2E7BCF] text-white" : "bg-gray-100 text-gray-600"}
-                                    `}
+                                    className={`flex items-center justify-center 
+        w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 
+        rounded-full text-base sm:text-lg md:text-xl 
+        ${isActive ? "bg-[#2E7BCF] text-white" : "bg-gray-100 text-gray-600"}
+    `}
                                 >
                                     {tab.icon}
                                 </span>
-                                <span>
-                                    <h4 className={`font-bold text-xs sm:text-sm md:text-base text-left ${isActive ? "text-[#2E7BCF]" : "text-gray-800"}`}>
+
+                                <span className="text-center sm:text-left">
+                                    <h4
+                                        className={`font-bold text-[11px] sm:text-sm md:text-base 
+          ${isActive ? "text-[#2E7BCF]" : "text-gray-800"}
+      `}
+                                    >
                                         {tab.label}
                                     </h4>
                                 </span>
                             </button>
+
                         );
                     })}
                 </div>

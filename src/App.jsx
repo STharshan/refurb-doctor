@@ -17,6 +17,7 @@ import AlloyWheel from "./pages/AlloyWheel";
 import Machine from "./pages/Machine";
 import Mobile from "./pages/Mobile";
 import Vandal from "./pages/Vandal";
+import GDPRConsent from "./components/GDPRButton";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/services/mobile-repair" element={<Mobile />} />
       </Routes>
       <Footer />
+      <GDPRConsent />
     </Router>
   );
 }

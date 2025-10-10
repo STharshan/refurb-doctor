@@ -24,7 +24,7 @@ const Commitment = () => {
     const current = tabs.find((t) => t.key === activeTab);
 
     return (
-        <section className="bg-white">
+        <section className="bg-white p-4">
             {/* Section 1: Call to Action */}
             <div className="bg-[#2E7BCF] text-white py-12 px-6 rounded-xl text-center max-w-7xl mx-auto">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Book a Service?</h2>
@@ -52,7 +52,7 @@ const Commitment = () => {
             </div>
 
             {/* Section 2: Our Commitment */}
-            <div className="bg-gray-100 py-16 px-4 md:px-10 mt-15">
+            <div className="bg-gray-100 py-10 px-4 md:px-10 mt-15">
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
                     {/* Left Tabs */}
                     <div>

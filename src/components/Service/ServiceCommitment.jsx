@@ -26,7 +26,7 @@ const ServiceCommitment = () => {
     }
 
     return (
-        <section className="bg-white">
+        <section className="bg-white p-4">
             {/* Section 1: Call to Action */}
             <div className="bg-[#2E7BCF] text-white py-12 px-6 rounded-xl text-center max-w-7xl mx-auto mb-20 mt-10">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Book a Service?</h2>

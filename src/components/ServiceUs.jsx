@@ -89,8 +89,8 @@ const ServiceUs = () => {
   }, []);
 
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="text-center mb-10 mt-25">
+    <section className="py-1 px-4 bg-white">
+      <div className="text-center mb-10 mt-30">
         <h2 className="text-3xl md:text-4xl font-bold text-[#2E7BCF]">
           Our Comprehensive Services
         </h2>

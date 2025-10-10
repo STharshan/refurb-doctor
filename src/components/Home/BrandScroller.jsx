@@ -12,8 +12,8 @@ const logos = [
 
 const BrandScroller = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="text-center mb-8">
+    <section className=" bg-white">
+      <div className="text-center mb-8 mt-10 p-3">
         <h2 className="text-3xl md:text-5xl font-bold text-[#2E7BCF]">We Provide the Best Services</h2>
         <p className="mt-2 text-gray-600 max-w-xl mx-auto text-lg font-semibold">
           Trusted by leading dealerships in the Midlands for our reliability, professionalism, and

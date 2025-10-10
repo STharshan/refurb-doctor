@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-6 font-semibold text-black text-lg">
+        <ul className="hidden lg:flex space-x-6 font-semibold text-black text-lg">
           {navLinks.map((link) => (
             <li key={link.name}>
               <Link
@@ -39,7 +39,7 @@ const Navbar = () => {
         </ul>
 
         {/* WhatsApp Button (Desktop Only) */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <a
             href="tel:+447581730734"
             target="_blank"
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setOpen(!open)}>
             {open ? <FiX className="text-2xl" /> : <FiMenu className="text-2xl" />}
           </button>
@@ -61,7 +61,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {open && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="lg:hidden bg-white shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-4 font-medium text-lg">
             {navLinks.map((link) => (
               <li key={link.name}>
