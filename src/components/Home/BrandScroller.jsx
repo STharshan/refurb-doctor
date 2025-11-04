@@ -21,8 +21,8 @@ const BrandScroller = () => {
         </p>
       </div>
 
-      <div className="overflow-hidden">
-        <div className="flex whitespace-nowrap animate-scroll w-[200%] gap-30">
+      <div className="overflow-hidden max-w-3xl mx-auto">
+        <div className="flex whitespace-nowrap animate-scroll w-[200%] gap-5">
           {logos.map((logo, index) => (
             <img
               key={index}
